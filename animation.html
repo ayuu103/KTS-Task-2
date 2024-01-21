@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box1{
+        position: relative;
+        top: 25%;
+        width: 300px;
+        height: 200px;
+        background-color: black;
+       animation-name: animate;
+       animation-duration: 3s;
+       animation-iteration-count: 3;
+       animation-timing-function: ease-in-out;
+       animation-delay: 0s;
+       animation-direction: alternate-reverse;
+       /* animation-fill-mode: forwards; */
+    }
+    @keyframes animate {
+        from{
+            left:0;
+        }
+        to{
+            left:500px;
+        }
+    }
+</style>
+<body>
+    <div id="box1"></div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        height: 450px;
+        width: 100%;
+        background-color: aqua;
+        display: inline-block;
+        white-space:nowrap;   
+        font-size: 4vw; 
+        overflow-x: auto;
+    }
+    #main::-webkit-scrollbar{
+        display: none;
+    }
+    #main h1{
+    display: inline-block;
+    white-space: nowrap;
+    }
+    #con{
+        display: inline-block;
+        margin: 20px;
+        animation-name: move;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        /* animation-fill-mode: forwards; */
+        animation-direction:alternate;
+
+    }
+    @keyframes move {
+        from{
+            transform:translateX(0) ;
+
+        }
+        to{
+            transform: translateX(-100%);
+        }
+        
+    }
+</style>
+<body>
+    <div id="main">
+        <div id="con">
+            <h1>from</h1>
+            <h1>zero</h1>
+            <h1>to</h1>
+            <h1>scratch
+            </h1>
+        </div>
+        <div id="con">
+            <h1>from</h1>
+            <h1>zero</h1>
+            <h1>to</h1>
+            <h1>scratch </h1>
+        </div>
+        <div id="con">
+            <h1>from</h1>
+            <h1>zero</h1>
+            <h1>to</h1>
+            <h1>scratch
+            </h1>
+        </div>
+    </div>
+
+    
+</body>
+</html>
